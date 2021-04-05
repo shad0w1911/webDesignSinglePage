@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100vw;
+    user-select: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: fit-content;
+}
+
+
+/* navbar  */
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-bottom: 2px solid #fff;
+}
+
+.navbarHolder {
+    width: 100%;
+    height: auto;
+}
+
+.navbarBrand {
+    width: 50%;
+    user-select: none;
+}
+
+.navbarBrand a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 196, 0);
+    transition: 0.3s;
+}
+
+.navbarBrand a:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.navbarMenu ul {
+    list-style: none;
+}
+
+.navbarMenu ul li {
+    float: left;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-self: center;
+    margin: 2px 5px;
+    user-select: none;
+}
+
+.navbarMenu ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbarMenu ul li a:hover {
+    color: rgb(255, 196, 0);
+    cursor: pointer;
+}
+
+
+/* home section */
+
+.banner {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -220px;
+    /* -webkit-filter: blur(4px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px); */
+}
+
+.bannerText {
+    position: absolute;
+    transform: translate(150px, 180px);
+    color: #fff;
+}
+
+.bannerText h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.bannerText p {
+    text-align: center;
+}
+
+#bannerBtn {
+    margin: 15px;
+    position: absolute;
+    transform: translate(420px, 0px);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: 2px thin transparent;
+    border-radius: 5px;
+    width: 110px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#bannerBtn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+    color: #000;
+}
+
+
+/* about section */
+
+#about {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.aboutMain h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.aboutMain p {
+    padding: 10px 120px;
+    font-size: 1.2rem;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+
+li {
+    height: 40vh;
+    flex-grow: 1;
+    list-style: none;
+}
+
+li:last-child {
+    flex-grow: 10;
+}
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border: 3px solid #fff;
+}
+
+.aboutServices {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutServices div {
+    padding: 20px;
+    width: 400px;
+}
+
+.aboutServices div h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(255, 196, 0);
+}
+
+.aboutServices div p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+
+/* contact section */
+
+.wrapper {
+    display: flex;
+}
+
+.contactDetail {
+    background: #0F2027;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+    width: 45vw;
+    padding: 50px;
+    color: #fff;
+}
+
+.contactDetailText {
+    margin: 0px 0px;
+}
+
+.contactDetailText p {
+    color: rgb(255, 196, 0);
+    padding: 2px 0px;
+}
+
+.contactDetailText {
+    margin-top: 50px;
+}
+
+.contactDetailText h1 {
+    padding: 5px 0px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 40px;
+}
+
+.contactDetailText h2 {
+    padding: 5px 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.contactDetailText div {
+    padding: 10px 0px;
+}
+
+.contactDetailText div a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contactDetailText div a i {
+    padding: 2px;
+}
+
+.contactDetailText div a i:hover {
+    color: rgb(255, 196, 0);
+    cursor: pointer;
+}
+
+.contactDetailText .contactForm {
+    display: flex;
+    transform: translate(0px, 50px);
+}
+
+.contactForm {
+    width: 45vw;
+}
+
+.contactForm div {
+    padding: 10px 0px;
+}
+
+form {
+    margin-top: 80px;
+    transform: translate(20%, 50px);
+}
+
+input {
+    border: none;
+    width: 400px;
+    height: 30px;
+    border-bottom: 2px solid #000;
+}
+
+textarea {
+    border: none;
+    width: 400px;
+    height: 150px;
+    border-bottom: 2px solid #000;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border-bottom: rgb(255, 196, 0) 2px solid;
+}
+
+textarea:hover,
+input:hover {
+    border-bottom: rgb(255, 196, 0) 2px solid;
+}
+
+.contactForm button {
+    transform: translate(-90px, 0);
+    border: 2px solid transparent;
+    background-color: transparent;
+    font-size: 25px;
+    margin-left: 40%;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.contactForm div button:hover {
+    border: 2px solid rgb(255, 196, 0);
+    background-color: rgb(255, 196, 0);
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(255, 196, 0);
+}
